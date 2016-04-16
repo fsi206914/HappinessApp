@@ -20,6 +20,11 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="jiN-0h-j2o" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qhN-Aa-Q6v" appends="YES" id="42d-aL-fyC"/>
+                                    <outletCollection property="gestureRecognizers" destination="qhN-Aa-Q6v" appends="YES" id="ntc-NK-vNd"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +40,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LjG-a2-hnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="qhN-Aa-Q6v">
+                    <connections>
+                        <action selector="changeHappiness:" destination="tPG-FG-BL7" id="jpP-mu-Y5b"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="178" y="327"/>
         </scene>
